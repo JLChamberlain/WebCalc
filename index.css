@@ -19,6 +19,8 @@ body {
 
 #Result {
 	height: 21%;
+	width: 95%;
+	margin: 0 auto;
 }
 
 #History {
@@ -36,7 +38,7 @@ body {
 
 #HistoryValue, #OutputValue {
 	overflow: hidden;
-	padding: 0px 10px 0px 0px;
+	direction: rtl;
 }
 
 #KeyPad {
