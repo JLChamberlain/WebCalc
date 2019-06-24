@@ -1,0 +1,83 @@
+body {
+	font-family: cambria;
+}
+
+#Calculator {
+	width: 300px;
+	height: 500px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	top: 20px;
+	border-radius: 5px;
+	border: 2px #818181a6 solid;
+	display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Result {
+	height: 21%;
+}
+
+#History {
+	text-align: right;
+	height: 16.6%;
+	font-size: 15px;
+	color: #919191;
+}
+
+#Output {
+	text-align: right;
+	height: 50%;
+	font-size: 30px;
+}
+
+#HistoryValue, #OutputValue {
+	overflow: hidden;
+	padding: 0px 10px 0px 0px;
+}
+
+#KeyPad {
+	height: 75%;
+}
+
+button {
+	background-color: #f0efef;
+	cursor: pointer;
+}
+
+button:active {
+	background-color: #aaaaaaab;
+	font-size: 13px;
+}
+
+.operator, .number, .empty {
+	width: 23%;
+	height: 18.7%;
+	margin: 1%;
+	float: left;
+	border-radius: 10%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+	outline: 0;
+}
+
+.empty{
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  #Calculator {
+	width: 95%;
+	height: 95%;
+  }
+}
+
+@media only screen and (max-height: 540px) {
+	.operator, .number, .empty {
+	height: 18.2%;
+    }
+}
